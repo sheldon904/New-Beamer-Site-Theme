@@ -39,7 +39,9 @@
                     <li><a href="<?= e($link) ?>" class="header__nav-link"><?= e($name) ?></a></li>
                 <?php endforeach; ?>
             </ul>
-            <a href="#contact" class="btn btn--primary">Book Service</a>
+            <a href="#contact" class="button type1 button--header">
+              <span class="btn-txt">Book Service</span>
+            </a>
         </nav>
     </div>
 </header>

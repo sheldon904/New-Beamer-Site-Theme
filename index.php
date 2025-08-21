@@ -46,8 +46,12 @@ require_once 'partials/header.php';
             <h1 class="hero__headline">Jacksonville's BMW Specialists</h1>
             <p class="hero__subhead">Performance, Service, Repair, Engine Rebuilds and More</p>
             <div class="hero__actions">
-                <a href="#contact" class="btn btn--primary">Book Service</a>
-                <a href="#services" class="btn btn--secondary">Our Services</a>
+                <a href="#contact" class="button type1">
+                  <span class="btn-txt">Book Service</span>
+                </a>
+                <a href="#services" class="button type1">
+                  <span class="btn-txt">Our Services</span>
+                </a>
             </div>
         </div>
         <div class="hero__image-wrapper">
