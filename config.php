@@ -19,15 +19,15 @@ define('SITE_AUTHOR', 'JAX BEAMERS');
 // Contact Information
 $config = [
     'contact' => [
-        'phone' => '(904) 555-1234',
-        'email' => 'service@jaxbeamers.com',
-        'address' => '1234 Performance Lane, Jacksonville, FL 32256',
-        'google_maps_link' => 'https://www.google.com/maps/search/?api=1&query=Jacksonville+FL'
+        'phone' => '(904) 270-9390',
+        'email' => 'bavarianrennsport@gmail.com',
+        'address' => '2027 Mayport Rd, Jacksonville, FL 32233',
+        'google_maps_link' => 'https://www.google.com/maps/search/?api=1&query=2027+Mayport+Rd+Jacksonville+FL+32233'
     ],
     'hours' => [
-        'Monday - Friday' => '8:00 AM - 6:00 PM',
-        'Saturday' => '10:00 AM - 4:00 PM',
-        'Sunday' => 'Closed'
+        'Weekdays' => '9:00 AM – 7:00 PM',
+        'Saturday' => 'CLOSED, call for appointments and emergencies',
+        'Sunday' => 'CLOSED to spend time with God and Family'
     ],
     'socials' => [
         'facebook' => 'https://facebook.com',
