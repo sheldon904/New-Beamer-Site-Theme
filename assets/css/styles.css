@@ -458,50 +458,9 @@ body.nav-open .header__nav-toggle .icon--menu::after {
     margin-bottom: 1rem;
 }
 
-.contact__info-item svg {
-    flex-shrink: 0;
-    margin-top: 4px;
-    color: var(--m-light-blue);
-}
 
-.contact-form .form-group {
-    margin-bottom: 1.5rem;
-}
 
-.contact-form label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
 
-.contact-form .form-control {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    font-family: inherit;
-    font-size: 1rem;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.contact-form .form-control:focus {
-    border-color: var(--m-light-blue);
-    box-shadow: 0 0 0 3px rgba(0, 174, 239, 0.2);
-    outline: none;
-}
-
-.form-message {
-    padding: 1rem;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-}
-
-.form-message--success {
-    background-color: #D1FAE5;
-    border-color: #6EE7B7;
-    color: #065F46;
-}
 
 /* --- FOOTER --- */
 .footer {
@@ -676,7 +635,7 @@ body.nav-open .header__nav-toggle .icon--menu::after {
 
 .btn-txt {
   z-index: 1;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 4px;
 }
 
@@ -712,5 +671,20 @@ body.nav-open .header__nav-toggle .icon--menu::after {
 
 .button--header .btn-txt {
   letter-spacing: 2px;
+}
+
+/* Icon Styles */
+.feature-card__img-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1rem; /* Center it and add space below */
+    transform: scale(1.7);
+}
+
+
+/* Button Modifier */
+.button--longtext .btn-txt {
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 

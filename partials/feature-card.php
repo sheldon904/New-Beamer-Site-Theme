@@ -9,16 +9,18 @@
 <div class="feature-card">
     <?php if (!empty($feature['icon'])) : ?>
         <div class="feature-card__icon">
-            <!-- 
-                This is a placeholder for an icon. 
-                In a real project, you might use an SVG sprite, an icon font, or inline SVGs.
-                For now, we'll use a simple text representation.
-            -->
-            <?php 
-                $icon_map = ['tune' => '??', 'service' => '??', 'diag' => '??'];
-                echo e($icon_map[$feature['icon']] ?? '??');
-            ?>
-        </div>
+        <?php
+            $icon_map = [
+                'tune' => 'Performance Icon.png',
+                'service' => 'Expert Maintenance.png',
+                'diag' => 'advanced diagnostics.png'
+            ];
+            $icon_file = $icon_map[$feature['icon']] ?? '';
+            if ($icon_file) {
+                echo '<img src="assets/img/icons/' . e($icon_file) . '" alt="' . e($feature['title']) . '" class="feature-card__img-icon">';
+            }
+        ?>
+    </div>
     <?php endif; ?>
     <h3 class="feature-card__title"><?= e($feature['title']) ?></h3>
     <p class="feature-card__text"><?= e($feature['text']) ?></p>
