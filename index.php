@@ -44,7 +44,7 @@ require_once 'partials/header.php';
     <div class="container hero__container">
         <div class="hero__content">
             <h1 class="hero__headline">Jacksonville's BMW Specialists</h1>
-            <p class="hero__subhead">Performance, maintenance, coding, and care</p>
+            <p class="hero__subhead">Performance, Service, Repair, Engine Rebuilds and More</p>
             <div class="hero__actions">
                 <a href="#contact" class="btn btn--primary">Book Service</a>
                 <a href="#services" class="btn btn--secondary">Our Services</a>
@@ -75,7 +75,7 @@ require_once 'partials/header.php';
         </div>
         <div class="about__content">
             <h2 class="section__title" style="text-align: left;">The Ultimate Care for Your Ultimate Driving Machine</h2>
-            <p>JAX BEAMERS was founded by enthusiasts, for enthusiasts. We got tired of the dealership runaround and the corner shops that didn't understand the precision engineering of a BMW. We combine a passion for the brand with dealer-level equipment and a commitment to transparent, honest service. Whether you're here for a routine oil change or a full performance build, we treat every car as if it were our own.</p>
+            <p>BMW service in Jacksonville, by enthusiasts for enthusiasts. JAX Beamers is your independent specialist, staffed by BMW Master Technicians who handle everything from oil changes and inspections to complex brake, suspension, engine, electrical, and transmission repairs. We pair dealer-level tools with clear diagnostics and straight talk, and our work typically costs 20 to 30 percent less than the dealer. At each visit we check condition and safety, explain what is next, and help you plan maintenance around how you drive. Book an oil change, diagnostic, or pre-purchase inspection today.</p>
         </div>
     </div>
 </section>

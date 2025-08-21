@@ -52,15 +52,15 @@ $config = [
         ]
     ],
     'services' => [
-        'Engine & Transmission Tuning',
-        'Suspension Upgrades (Coilovers, Springs)',
-        'Performance Exhaust Systems',
-        'Big Brake Kits & Upgrades',
+        'Engine & Transmission Service (Flushes, Rebuilds, Valve Adjust)',
+        'Tires, Wheels & Balancing',
+        'Exhaust & Emissions Repair',
+        'Brake Service & Upgrades (Pads, Rotors, Sensors)',
         'Scheduled Maintenance (Oil, Filters, Plugs)',
-        'Walnut Blasting (Intake Valve Cleaning)',
-        'Rod Bearing Replacement',
-        'Custom Vehicle Coding (DRL, Seatbelt Chimes)',
-        'Pre-Purchase Inspections'
+        'Intake Valve Carbon Cleaning (Walnut Blasting)',
+        'Cooling & HVAC System Service',
+        'Electrical & Coding (Modules, Option Programming)',
+        'Inspections & Diagnostics (Pre-Purchase, CEL)'
     ],
     'navigation' => [
         'Services' => '#services',
