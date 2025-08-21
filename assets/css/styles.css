@@ -296,6 +296,7 @@ body.nav-open .header__nav-toggle .icon--menu::after {
 }
 
 .hero__image {
+    transform: scale(1.4);
     filter: drop-shadow(0 10px 25px var(--shadow-color));
 }
 

@@ -51,7 +51,7 @@ require_once 'partials/header.php';
             </div>
         </div>
         <div class="hero__image-wrapper">
-            <img src="assets/img/hero-car.jpg" alt="White BMW M-series car poised on a road" class="hero__image">
+            <img src="assets/img/bmw-transparent.png" alt="Bavarian Rennsport hero image" class="hero__image">
         </div>
     </div>
 </section>
