@@ -84,9 +84,9 @@ function wp_bmw_theme_get_config() {
             'Sunday' => 'CLOSED to spend time with God and Family'
         ),
         'socials' => array(
-            'facebook' => 'https://facebook.com',
-            'instagram' => 'https://instagram.com',
-            'youtube' => 'https://youtube.com'
+            'facebook' => 'https://www.facebook.com/BavarianRennSport',
+            'instagram' => 'https://www.instagram.com/bavarianrennsport/',
+            'youtube' => 'https://www.youtube.com/channel/UC7z8YdJu3WhzR7jli6qTIqQ'
         ),
         'navigation' => array(
             'Services' => '#services',
@@ -158,18 +158,37 @@ function wp_bmw_theme_add_page_templates($templates) {
 }
 add_filter('theme_page_templates', 'wp_bmw_theme_add_page_templates');
 
-// Enable template selection in page editor
-function wp_bmw_theme_redirect_page_template() {
-    $template = get_page_template_slug();
-    if ($template) {
-        $new_template = locate_template(array($template));
-        if ($new_template) {
-            return $new_template;
+// Ensure selected page template resolves correctly
+function wp_bmw_theme_redirect_page_template($template) {
+    $slug = get_page_template_slug();
+    if ($slug) {
+        $located = locate_template(array($slug));
+        if (!empty($located)) {
+            return $located;
         }
     }
-    return null;
+    // Fall back to WordPress's resolved template
+    return $template;
 }
 add_filter('page_template', 'wp_bmw_theme_redirect_page_template');
+
+// Force the front page to use the assigned page template (e.g., "Home Page")
+function wp_bmw_theme_front_page_use_assigned_template($template) {
+    if (is_front_page()) {
+        $front_id = get_queried_object_id();
+        if ($front_id) {
+            $slug = get_page_template_slug($front_id);
+            if ($slug) {
+                $located = locate_template(array($slug));
+                if (!empty($located)) {
+                    return $located;
+                }
+            }
+        }
+    }
+    return $template;
+}
+add_filter('template_include', 'wp_bmw_theme_front_page_use_assigned_template', 99);
 
 // Add custom body classes for different templates
 function wp_bmw_theme_body_classes($classes) {

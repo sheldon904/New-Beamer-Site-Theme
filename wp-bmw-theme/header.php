@@ -3,8 +3,8 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="JAX BEAMERS is Jacksonville's premier independent shop for BMW performance tuning, maintenance, coding, and expert care. We treat your ultimate driving machine with the ultimate attention to detail.">
-    <meta name="author" content="JAX BEAMERS">
+    <meta name="description" content="JAX BIMMERS is Jacksonville's premier independent shop for BMW performance tuning, maintenance, coding, and expert care. We treat your ultimate driving machine with the ultimate attention to detail.">
+    <meta name="author" content="JAX BIMMERS">
     
     <?php wp_head(); ?>
 </head>
@@ -21,9 +21,9 @@
                 <?php 
                 $site_name = get_bloginfo('name');
                 if ($site_name) {
-                    echo 'JAX<span>BEAMERS</span>';
+                    echo 'JAX<span>BIMMERS</span>';
                 } else {
-                    echo 'JAX<span>BEAMERS</span>';
+                    echo 'JAX<span>BIMMERS</span>';
                 }
                 ?>
             </a>
@@ -45,7 +45,7 @@
                 'walker' => new WP_BMW_Theme_Walker_Nav_Menu()
             ));
             ?>
-            <a href="#contact" class="button type1 button--header">
+            <a href="https://www.bavarianrennsport.com/book-appointment/" class="button type1 button--header">
               <span class="btn-txt">Book Service</span>
             </a>
         </nav>
@@ -58,7 +58,7 @@
 // Fallback menu if no menu is assigned
 function wp_bmw_theme_fallback_menu() {
     echo '<ul class="header__nav-list">';
-    echo '<li><a href="#services" class="header__nav-link">Services</a></li>';
+    echo '<li><a href="https://www.bavarianrennsport.com/car-brands/bmw/" class="header__nav-link">Services</a></li>';
     echo '<li><a href="#about" class="header__nav-link">About</a></li>';
     echo '<li><a href="#contact" class="header__nav-link">Contact</a></li>';
     echo '</ul>';

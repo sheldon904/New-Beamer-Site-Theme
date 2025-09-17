@@ -1,6 +1,6 @@
 # WP BMW Theme
 
-A custom WordPress theme for JAX BEAMERS - BMW Performance and Service in Jacksonville.
+A custom WordPress theme for JAX BIMMERS - BMW Performance and Service in Jacksonville.
 
 ## Description
 
@@ -89,8 +89,8 @@ wp-bmw-theme/
 
 ## License
 
-This theme is provided as-is for the specific use case. All images and content are specific to JAX BEAMERS business.
+This theme is provided as-is for the specific use case. All images and content are specific to JAX BIMMERS business.
 
 ## Support
 
-This theme was created for JAX BEAMERS and includes all necessary assets and functionality from the original local development environment.
+This theme was created for JAX BIMMERS and includes all necessary assets and functionality from the original local development environment.

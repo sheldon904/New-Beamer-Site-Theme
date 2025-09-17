@@ -44,16 +44,20 @@
             <div class="footer__col">
                 <h4>Follow Us</h4>
                 <div class="footer__socials">
-                    <?php foreach ($config['socials'] as $name => $link) : ?>
-                        <a href="<?php echo esc_url($link); ?>" target="_blank" rel="noopener noreferrer" aria-label="<?php echo esc_attr(ucfirst($name)); ?>">
-                            <?php echo esc_html(strtoupper(substr($name, 0, 1))); ?>
-                        </a>
-                    <?php endforeach; ?>
+                    <a href="https://www.facebook.com/BavarianRennSport" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <img src="https://jaxbimmers.com/wp-content/uploads/2025/09/facebook-logo-facebook-icon-transparent-free-png.webp" alt="Facebook" />
+                    </a>
+                    <a href="https://www.instagram.com/bavarianrennsport/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <img src="https://jaxbimmers.com/wp-content/uploads/2025/09/Instagram_icon-scaled.png" alt="Instagram" />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC7z8YdJu3WhzR7jli6qTIqQ" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <img src="https://jaxbimmers.com/wp-content/uploads/2025/09/youtube-logo-png-46031.png" alt="YouTube" />
+                    </a>
                 </div>
             </div>
         </div>
         <div class="footer__bottom-bar">
-            &copy; <?php echo date('Y'); ?> <?php echo get_bloginfo('name') ?: 'JAX BEAMERS'; ?>. All rights reserved.
+            &copy; <?php echo date('Y'); ?> <?php echo get_bloginfo('name') ?: 'JAX BIMMERS'; ?>. All rights reserved.
         </div>
     </div>
 </footer>
@@ -67,10 +71,10 @@
 // Fallback footer menu if no menu is assigned
 function wp_bmw_theme_footer_fallback_menu() {
     echo '<ul class="footer__list">';
-    echo '<li><a href="#services">Services</a></li>';
+    echo '<li><a href="https://www.bavarianrennsport.com/car-brands/bmw/">Services</a></li>';
     echo '<li><a href="#about">About</a></li>';
     echo '<li><a href="#contact">Contact</a></li>';
-    echo '<li><a href="#contact">Book Service</a></li>';
+    echo '<li><a href="https://www.bavarianrennsport.com/book-appointment/">Book Service</a></li>';
     echo '</ul>';
 }
 ?>

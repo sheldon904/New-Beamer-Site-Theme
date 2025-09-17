@@ -12,16 +12,16 @@
             <h1 class="hero__headline">Jacksonville's BMW Specialists</h1>
             <p class="hero__subhead">Performance, Service, Repair, Engine Rebuilds and More</p>
             <div class="hero__actions">
-                <a href="#contact" class="button type1">
+                <a href="https://www.bavarianrennsport.com/book-appointment/" class="button type1">
                   <span class="btn-txt">Book Service</span>
                 </a>
-                <a href="#services" class="button type1">
+                <a href="https://www.bavarianrennsport.com/car-brands/bmw/" class="button type1">
                   <span class="btn-txt">Our Services</span>
                 </a>
             </div>
         </div>
         <div class="hero__image-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bmw-transparent.png" alt="Bavarian Rennsport hero image" class="hero__image">
+            <img src="https://jaxbimmers.com/wp-content/uploads/2025/08/bmw-transparent-scaled.webp" alt="Bavarian Rennsport hero image" class="hero__image">
         </div>
     </div>
 </section>
@@ -61,11 +61,27 @@
 <section class="section section--bg-gray" id="about">
     <div class="container about__container">
         <div class="about__image-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jax-skyline.png" alt="Jacksonville skyline silhouette" class="about__image about__image--transparent">
+            <img src="https://jaxbimmers.com/wp-content/uploads/2025/08/jax-skyline-e1758137761232.webp" alt="Jacksonville skyline silhouette" class="about__image about__image--transparent">
         </div>
         <div class="about__content">
             <h2 class="section__title" style="text-align: left;">The Ultimate Care for Your Ultimate Driving Machine</h2>
-            <p>BMW service in Jacksonville, by enthusiasts for enthusiasts. JAX Beamers is your independent specialist, staffed by BMW Master Technicians who handle everything from oil changes and inspections to complex brake, suspension, engine, electrical, and transmission repairs. We pair dealer-level tools with clear diagnostics and straight talk, and our work typically costs 20 to 30 percent less than the dealer. At each visit we check condition and safety, explain what is next, and help you plan maintenance around how you drive. Book an oil change, diagnostic, or pre-purchase inspection today.</p>
+            <p>BMW service in Jacksonville, by enthusiasts for enthusiasts. JAX Bimmers is your independent specialist, staffed by BMW Master Technicians who handle everything from oil changes and inspections to complex brake, suspension, engine, electrical, and transmission repairs. We pair dealer-level tools with clear diagnostics and straight talk, and our work typically costs 20 to 30 percent less than the dealer. At each visit we check condition and safety, explain what is next, and help you plan maintenance around how you drive. Book an oil change, diagnostic, or pre-purchase inspection today.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT THE EXPERT SECTION -->
+<section class="section section--bg-gray" id="expert">
+    <div class="container">
+        <div style="margin-bottom: 2rem;">
+            <center><img src="https://jaxbimmers.com/wp-content/uploads/2025/08/shawn.webp" alt="Shawn Welk - BMW Expert" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></center>
+        </div>
+        <div class="about__content">
+            <h2 class="section__title">About the Expert: Shawn Welk</h2>
+            <p>Shawn Welk has been racing BMWs since 1995, starting with the E36 M3.</p>
+            <p>Owners across multiple BMW communities credit Shawn and his crew with hands-on help outside formal shop settings, including work associated with Piston Performance in Jacksonville Beach and service references alongside Tom Bush BMW OP. These are community testimonials that point to long-standing, practical involvement with BMW builds and maintenance.</p>
+            <p>Beyond community leadership, Shawn publishes technical guidance on performance topics such as precise string alignments, a race-inspired method used to dial in chassis setup for street and track.</p>
+            <p>Today, Shawn remains active in regional BMW circles, answering questions, sharing know-how, and connecting owners with reliable resources throughout North Florida.</p>
         </div>
     </div>
 </section>

@@ -16,7 +16,7 @@
 
         <div style="margin-top: 3rem;">
             <h3>Looking for BMW service in Jacksonville?</h3>
-            <p>You can still reach out to JAX Beamers for all your BMW needs!</p>
+            <p>You can still reach out to JAX Bimmers for all your BMW needs!</p>
         </div>
     </div>
 </div>

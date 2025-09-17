@@ -1,7 +1,7 @@
 /*
 Theme Name: WP BMW Theme
-Description: A custom WordPress theme for JAX BEAMERS - BMW Performance and Service in Jacksonville. Features a modern, responsive design with BMW M colors and styling.
-Author: Your Name
+Description: A custom WordPress theme for JAX BIMMERS - BMW Performance and Service in Jacksonville. Features a modern, responsive design with BMW M colors and styling.
+Author: Sheldon White
 Version: 1.0
 */
 
@@ -34,6 +34,7 @@ Version: 1.0
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
@@ -43,6 +44,7 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 img {
@@ -124,8 +126,10 @@ a:hover {
 
 /* --- HEADER --- */
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0.9);
@@ -211,6 +215,11 @@ body.nav-open .header__nav-toggle .icon--menu::after {
     gap: 1.5rem;
 }
 
+/* Offset page content for fixed header */
+main {
+    padding-top: var(--header-height);
+}
+
 .header__nav-list {
     display: flex;
     list-style: none;
@@ -261,10 +270,23 @@ body.nav-open .header__nav-toggle .icon--menu::after {
     z-index: 0;
     transform: skewX(-18deg);
     transform-origin: top left;
+    overflow: hidden;
 }
 
 .hero__stripe {
     flex: 1;
+    transform: translateX(120%);
+    opacity: 0;
+    animation: stripeIn 0.9s ease-out forwards;
+    will-change: transform, opacity;
+}
+
+.hero__stripe:nth-child(2) { animation-delay: 0.12s; }
+.hero__stripe:nth-child(3) { animation-delay: 0.24s; }
+
+@keyframes stripeIn {
+    from { transform: translateX(120%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
 }
 
 .hero__container {
@@ -305,6 +327,7 @@ body.nav-open .header__nav-toggle .icon--menu::after {
 .hero__image {
     transform: scale(1.4);
     filter: drop-shadow(0 10px 25px var(--shadow-color));
+    max-width: 100%;
 }
 
 /* --- SECTIONS --- */
@@ -326,6 +349,25 @@ body.nav-open .header__nav-toggle .icon--menu::after {
     font-weight: 800;
     color: var(--navy-primary);
     margin-bottom: 0.5rem;
+}
+
+/* --- ABOUT THE EXPERT (Shawn) --- */
+#expert .section__title {
+    text-align: center;
+}
+
+.about-expert__divider {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 0 0 1.5rem 0;
+}
+
+/* Reduce spacing between About and Expert sections */
+#about {
+    padding-bottom: 2rem; /* was 5rem */
+}
+#expert {
+    padding-top: 2rem; /* was 5rem */
 }
 
 .section__subtitle {
@@ -372,9 +414,14 @@ body.nav-open .header__nav-toggle .icon--menu::after {
 /* --- ABOUT SECTION --- */
 .about__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr; /* stack skyline above text on all screens */
     gap: 4rem;
     align-items: center;
+}
+
+.about__image-wrapper {
+    display: flex;
+    justify-content: center; /* center skyline image */
 }
 
 .about__image {
@@ -409,7 +456,7 @@ body.nav-open .header__nav-toggle .icon--menu::after {
     left: 0;
     right: 0;
     height: 200px;
-    background-image: url('assets/images/jax-skyline.png');
+    background-image: url('https://jaxbimmers.com/wp-content/uploads/2025/08/jax-skyline.webp');
     background-repeat: repeat-x;
     background-position: bottom center;
     background-size: contain;
@@ -513,7 +560,34 @@ body.nav-open .header__nav-toggle .icon--menu::after {
 }
 
 .footer__socials a {
-    font-size: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+
+.footer__socials a img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Slightly reduce Instagram icon visual size to match others */
+.footer__socials a[aria-label="Instagram"] img {
+    transform: scale(0.92);
+}
+.footer__socials a[aria-label="Instagram"]:hover img,
+.footer__socials a[aria-label="Instagram"]:focus img {
+    transform: scale(0.92) translateY(-2px);
+}
+
+.footer__socials a:hover img,
+.footer__socials a:focus img {
+    transform: translateY(-2px);
+    opacity: 0.9;
 }
 
 .footer__bottom-bar {
@@ -609,6 +683,88 @@ body.nav-open .header__nav-toggle .icon--menu::after {
     }
     .footer__grid {
         grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .footer__col {
+        text-align: center;
+    }
+    .footer__list {
+        text-align: center;
+    }
+    .footer__socials {
+        justify-content: center;
+    }
+    .button {
+        width: 190px;
+        height: 48px;
+        /* Make buttons always blue on mobile */
+        box-shadow: 1px 1px 200px #20aeec !important;
+        color: #fff !important;
+        border: none !important;
+    }
+    .button.type1::after {
+        /* Make the blue background always visible on mobile */
+        visibility: visible !important;
+        transform: scale(100) translateX(2px) !important;
+    }
+    .hero__stripes-container {
+        left: 65%;
+    }
+    .hero__image {
+        transform: scale(1.3);
+    }
+    /* Mobile-specific fixes */
+    #about .about__container .about__content .section__title {
+        text-align: center !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        hyphens: auto !important;
+        max-width: 100% !important;
+        padding: 0 1rem !important;
+        box-sizing: border-box !important;
+    }
+    #about .about__container .about__content p {
+        text-align: center !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        hyphens: auto !important;
+        max-width: 100% !important;
+        padding: 0 1rem !important;
+        box-sizing: border-box !important;
+    }
+    #about .about__container .about__image-wrapper {
+        text-align: center !important;
+        margin: 1rem auto !important;
+        max-width: 100% !important;
+        padding: 0 1rem !important;
+        box-sizing: border-box !important;
+    }
+    #about .about__container .about__image-wrapper .about__image {
+        margin: 0 auto !important;
+        display: block !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    /* Ensure the about content container doesn't overflow */
+    #about .about__container .about__content {
+        max-width: 100% !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+    /* Ensure the main about container doesn't overflow */
+    #about .about__container {
+        max-width: 100% !important;
+        padding: 0 1rem !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+    /* Override container padding on mobile for about section */
+    #about .container {
+        padding: 0 1rem !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
     }
 }
 
@@ -619,12 +775,35 @@ body.nav-open .header__nav-toggle .icon--menu::after {
     .footer__grid {
         grid-template-columns: 1fr;
     }
+    .button {
+        width: 180px;
+        height: 45px;
+    }
+    .btn-txt {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .hero__actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    .hero__stripes-container {
+        left: 70%;
+    }
+    .hero__image {
+        transform: scale(1.2);
+    }
+    .container {
+        padding: 0 1rem;
+    }
 }
 
 /* --- Uiverse Button Style --- */
 .button {
   height: 50px;
   width: 200px;
+  max-width: 100%;
   position: relative;
   background-color: transparent;
   cursor: pointer;
@@ -692,4 +871,38 @@ body.nav-open .header__nav-toggle .icon--menu::after {
 .button--longtext .btn-txt {
   font-size: 14px;
   letter-spacing: 1px;
+}
+
+
+/* Tighten About image spacing on mobile */
+@media (max-width: 640px) {
+  /* If your .section class adds big vertical padding, reduce it for this section */
+  #about.section {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  /* Match Expert top padding to About for consistency */
+  #expert.section {
+    padding-top: 12px;
+  }
+
+  /* If the container uses grid/flex gap, trim it too */
+  #about .about__container {
+    gap: 8px;
+  }
+
+  /* Remove any wrapper spacing that might be contributing */
+  #about .about__image-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Make the image block-level and minimize its own margins */
+  #about .about__image {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 100%;
+    height: auto;
+  }
 }
