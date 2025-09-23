@@ -61,7 +61,7 @@
 <section class="section section--bg-gray" id="about">
     <div class="container about__container">
         <div class="about__image-wrapper">
-            <img src="https://jaxbimmers.com/wp-content/uploads/2025/08/jax-skyline-e1758137761232.webp" alt="Jacksonville skyline silhouette" class="about__image about__image--transparent">
+            <img src="https://jaxbimmers.com/wp-content/uploads/2025/09/fast-bmw-jax.webp" alt="Jacksonville skyline silhouette" class="about__image about__image--transparent">
         </div>
         <div class="about__content">
             <h2 class="section__title" style="text-align: left;">The Ultimate Care for Your Ultimate Driving Machine</h2>

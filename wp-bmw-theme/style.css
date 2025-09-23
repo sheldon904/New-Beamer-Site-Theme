@@ -456,7 +456,7 @@ main {
     left: 0;
     right: 0;
     height: 200px;
-    background-image: url('https://jaxbimmers.com/wp-content/uploads/2025/08/jax-skyline.webp');
+    background-image: url('https://jaxbimmers.com/wp-content/uploads/2025/09/fast-bmw-jax.webp');
     background-repeat: repeat-x;
     background-position: bottom center;
     background-size: contain;
@@ -575,14 +575,7 @@ main {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Slightly reduce Instagram icon visual size to match others */
-.footer__socials a[aria-label="Instagram"] img {
-    transform: scale(0.92);
-}
-.footer__socials a[aria-label="Instagram"]:hover img,
-.footer__socials a[aria-label="Instagram"]:focus img {
-    transform: scale(0.92) translateY(-2px);
-}
+/* Removed Instagram-specific scaling to keep all icons equal size */
 
 .footer__socials a:hover img,
 .footer__socials a:focus img {
