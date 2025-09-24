@@ -74,15 +74,20 @@
 <section class="section section--bg-gray" id="expert">
     <div class="container">
         <hr class="about-expert__divider">
+        <div class="about__content">
+            <h2 class="section__title">About the Expert: Shawn Welk</h2>
+            <p>If you drive a BMW in Jacksonville, you want someone who knows these cars inside and out. Since the 90s, Shawn has lived the BMW life and turned that passion into practical help for local owners. Jax Bimmers is his way of giving you a smarter path to buy, maintain, and upgrade with confidence.</p><br>
+            <p>Shawn’s story starts with weekend wrenching and late-night forum threads in the 90s, then grows into years of meets, road trips, and real problem solving for fellow owners. Along the way he built a trusted network of technicians, alignment specialists, coders, and parts suppliers. Today, that network is your shortcut to the right answers and the right people.</p><br>
+            <p>His approach is simple. Protect reliability, unlock performance where it counts, and plan upgrades in the right order. Whether you are eyeing your first BMW or dialing in a modern M car, Shawn maps out a clear plan for inspections, maintenance, and sensible mods so every dollar pushes your build forward.</p><br>
+        </div>
         <div style="margin-bottom: 2rem;">
             <center><img src="https://jaxbimmers.com/wp-content/uploads/2025/08/shawn.webp" alt="Shawn Welk - BMW Expert" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></center>
         </div>
         <div class="about__content">
-            <h2 class="section__title">About the Expert: Shawn Welk</h2>
-            <p>Shawn Welk has been racing BMWs since 1995, starting with the E36 M3.</p>
-            <p>Owners across multiple BMW communities credit Shawn and his crew with hands-on help outside formal shop settings, including work associated with Piston Performance in Jacksonville Beach and service references alongside Tom Bush BMW OP. These are community testimonials that point to long-standing, practical involvement with BMW builds and maintenance.</p>
-            <p>Beyond community leadership, Shawn publishes technical guidance on performance topics such as precise string alignments, a race-inspired method used to dial in chassis setup for street and track.</p>
-            <p>Today, Shawn remains active in regional BMW circles, answering questions, sharing know-how, and connecting owners with reliable resources throughout North Florida.</p>
+            <p>Thinking about buying. Shawn’s pre-purchase consults help you avoid costly surprises and spot the cars worth chasing. Already own one. He creates staged maintenance roadmaps that focus on fluids, cooling, suspension, and braking so the car feels tight and responsive again. Want better lap times or sharper daily manners. He recommends proven software, suspension, and brake setups that keep reliability in check.</p><br>
+            <p>You are never guessing alone. Shawn connects you with independent shops that do it right the first time, alignment pros who understand BMW geometry, and reputable parts sources that stand behind what they sell. It is the difference between hoping for results and knowing what you will get.</p><br>
+            <p>Jax Bimmers is also a community. Expect local meets, Q&amp;A sessions, and real feedback from owners who actually drive their cars. If you want straight talk, honest recommendations, and a plan that fits your budget and goals, start with Shawn and make your next BMW decision your best one yet.</p><br>
+            <p>Ready to take the next step. Book a quick consult, ask a question, or request a shop referral. If you prefer to explore first, join the newsletter and get notified about upcoming meets and new owner guides tailored to Jacksonville BMW drivers.</p>
         </div>
     </div>
 </section>
